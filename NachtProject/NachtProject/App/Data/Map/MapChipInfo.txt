@@ -1,0 +1,2 @@
+green_floor,0,0
+sand_floor, 0,0
