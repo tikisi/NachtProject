@@ -22,8 +22,10 @@ void Main()
 }
 
 void Init() {
-	mcg.loadMapChipGraphName(U"MapChipInfo.txt");
-	mcg.loadMapChipGraphTexture();	
+	MapChipGraph::loadName(U"MapChipInfo.txt");
+	MapChipGraph::loadTexture();	
+	MapChipRelationGraph::loadName(U"MapChipRelationInfo.txt");
+	MapChipRelationGraph::loadTexture();
 }
 
 //
