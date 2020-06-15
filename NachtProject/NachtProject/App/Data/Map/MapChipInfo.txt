@@ -1,2 +1,10 @@
 green_floor,0,0
-sand_floor, 0,0
+green_edge_up,0,0
+green_edge_right,0,0
+green_edge_down,0,0
+green_edge_left,0,0
+green_edge_rightup,0,0
+green_edge_rightdown,0,0
+green_edge_leftdown,0,0
+green_edge_leftup,0,0
+sand_floor,0,0
