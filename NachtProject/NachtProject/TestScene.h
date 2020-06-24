@@ -1,21 +1,21 @@
 #pragma once
 #include <Siv3D.hpp>
-#include "Map.h"
+#include "Stage.h"
 
 using App = SceneManager<String>;
 
 class TestScene : public App::Scene {
 private: 
-    Map map;
+    Stage stage;
 public:
     TestScene(const InitData& init) : IScene(init), 
-        map(U"testMap.csv", U"testMapRelation.csv"){
+        stage(U"testMap.csv", U"testMapRelation.csv"){
     }
 
     void update() override {
     }
 
     void draw() const override {
-        map.draw();
+        stage.draw();
     }
 };

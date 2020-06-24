@@ -30,8 +30,7 @@ String MapChipRelationData::getCliffName(MapChipRelationGraph::Part part) const 
 }
 
 void MapChipGraph::loadName(const String& fileName) {
-    String tmp = MAP_PATH + fileName;
-    const CSVData csv(tmp);
+    const CSVData csv(MAP_PATH + fileName);
 
     if (!csv) {
         throw Error(U"Failed to open " + fileName);
@@ -58,8 +57,7 @@ String MapChipGraph::getName(uint16 graphCode) {
 }
 
 void MapChipRelationGraph::loadName(const String& fileName) {
-    String tmp = MAP_PATH + fileName;
-    const CSVData csv(tmp);
+    const CSVData csv(MAP_PATH + fileName);
 
     if (!csv) {
         throw Error(U"Failed to open " + fileName);

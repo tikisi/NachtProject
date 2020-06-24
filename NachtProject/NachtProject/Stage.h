@@ -2,7 +2,7 @@
 #include <Siv3D.hpp>
 #include "MapData.h"
 
-class Map {
+class Stage {
 private:
     Array<Array<MapChipData> > mcd;
     Array<Array<MapChipRelationData> > mrd;
@@ -11,7 +11,7 @@ private:
     void loadMrd(const String &filename);
 
 public:
-    Map(const String &mapChipDataFile, const String &mapChipRelationDataFile) {
+    Stage(const String &mapChipDataFile, const String &mapChipRelationDataFile) {
         loadMcd(mapChipDataFile);
         loadMrd(mapChipRelationDataFile);
     }
